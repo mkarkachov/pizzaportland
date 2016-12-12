@@ -169,7 +169,7 @@ body{
 }
 @media screen and (max-width:768px){
 	body{padding:50px;}
-	#footer{bottom:15px;}
+	#footer{bottom:12px;}
 }@media screen and (max-width:500px){
 	body{
 		padding:25px;
@@ -178,4 +178,4 @@ body{
 		width:220px;
 		height:218px;
 	}	.holder h2{font-size:30px;}
-}@media screen and (max-height:1000px){	.holder h2{margin-bottom: 15px;}	.text{bottom: 15px;}	@-webkit-keyframes fadeinup{		100%{			bottom:15px;			opacity:1;		}	}	@keyframes fadeinup{			100%{				bottom:15px;				opacity:1;			}		}}@media screen and (max-height:850px){	.holder h2{font-size: 28px;}}@media screen and (max-height:750px){	body{		padding:25px;		padding-bottom:50px;	}	#footer{bottom:15px;}}@media screen and (max-height:620px){	.logo{		width:220px;		height:218px;	}}@media screen and (max-height:588px){	.holder{vertical-align: top;}	.logo{		margin-top: 20px;		height: 165px;		width: 167px;	}	body{padding: 10px 10px 50px;}}
+}@media screen and (max-height:1000px){	.holder h2{margin-bottom: 15px;}	.text{bottom: 15px;}	@-webkit-keyframes fadeinup{		100%{			bottom:15px;			opacity:1;		}	}	@keyframes fadeinup{		100%{			bottom:15px;			opacity:1;		}	}}@media screen and (max-height:850px){	.holder h2{font-size: 28px;}}@media screen and (max-height:750px){	body{		padding:25px;		padding-bottom:50px;	}	#footer{bottom:12px;}}@media screen and (max-height:620px){	.logo{		width:220px;		height:218px;	}}@media screen and (max-height:588px){	.holder{vertical-align: top;}	body{padding: 10px 10px 50px;}}@media screen and (max-height:560px){	.logo{		margin-top: 20px;		height: 165px;		width: 167px;	}}
