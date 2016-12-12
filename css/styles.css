@@ -87,7 +87,6 @@ body{
 	background-size:cover;
 	text-align:center;
 	color:#fff;
-	position:relative;
 }
 .holder{
 	display:table-cell;
@@ -150,18 +149,17 @@ body{
 	font-size:22px;
 	margin-bottom:0;
 }.holder a{color:#fff;}
-.note{
-	position:absolute;
-	bottom:36px;
-	left:0;
-	width:100%;
+#footer{
 	text-align:center;
 	color:#999;
 	font-size:16px;
-	margin:0;
-}@media screen and (max-width:768px){
+	height: 22px;
+	margin-top: -56px;
+	overflow: hidden;
+}
+@media screen and (max-width:768px){
 	.wrapper{border-width:50px;}
-	.note{bottom:15px;}
+	#footer{margin-top: -36px;}
 }@media screen and (max-width:500px){
 	.wrapper{
 		border-width:25px;
