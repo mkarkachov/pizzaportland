@@ -77,9 +77,14 @@ body{
 	color:#000;
 	min-width:320px;
 	background-color:#fff;
+	padding: 100px;
+}
+.container{
+	position: relative;
+	min-height: 100%;
+	height: 100%;
 }
 .wrapper{
-	border:100px solid #fff;
 	width:100%;
 	height:100%;
 	display:table;
@@ -87,6 +92,8 @@ body{
 	background-size:cover;
 	text-align:center;
 	color:#fff;
+	overflow: hidden;
+	position: relative;
 }
 .holder{
 	display:table-cell;
@@ -98,7 +105,7 @@ body{
 	background-size:contain;
 	width:328px;
 	height:325px;
-	margin:0 auto 76px;
+	margin:0 auto;
 }.js .logo{
 	-webkit-animation-duration:1.4s;
 	animation-duration:1.4s;
@@ -108,13 +115,13 @@ body{
 	animation-name:fadein;
 }
 @-webkit-keyframes fadein{
-	from{opacity:0;}
+	from{opacity:1;}
 	to{opacity:1;}
 }
 @keyframes fadein{
-	from{opacity:0;}
+	from{opacity:1;}
 	to{opacity:1;}
-}.js .text{
+}.text{	position: absolute;	bottom:55px;	left: 0;	width: 100%;	padding: 0 10px;}.js .text{
 	-webkit-animation-duration:1.1s;
 	animation-duration:1.1s;
 	-webkit-animation-delay:1s;
@@ -123,20 +130,17 @@ body{
 	animation-timing-function:ease-in-out;
 	-webkit-animation-fill-mode:forwards;
 	animation-fill-mode:forwards;
-	-webkit-animation-name:fadeinup;
-	animation-name:fadeinup;
-	position:relative;
-	opacity:0;
-	bottom:-100px;
+	-webkit-animation-name:fadein;
+	animation-name:fadein;
+	opacity:1;
 }@-webkit-keyframes fadeinup{
 	100%{
 		opacity:1;
-		bottom:0;
+
 	}
 }@keyframes fadeinup{
 	100%{
 		opacity:1;
-		bottom:0;
 	}
 }.logo a{
 	display:block;
@@ -154,20 +158,21 @@ body{
 	color:#999;
 	font-size:16px;
 	height: 22px;
-	margin-top: -56px;
 	overflow: hidden;
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	width: 100%;
 }
 @media screen and (max-width:768px){
-	.wrapper{border-width:50px;}
-	#footer{margin-top: -36px;}
+	body{padding:50px;}
+	#footer{bottom:15px;}
 }@media screen and (max-width:500px){
-	.wrapper{
-		border-width:25px;
-		border-bottom-width:50px;
-	}	.note{bottom:15px;}
-	.logo{
+	body{
+		padding:25px;
+		padding-bottom:50px;
+	}	.logo{
 		width:220px;
 		height:218px;
-		margin-bottom:40px;
 	}	.holder h2{font-size:30px;}
-}
+}@media screen and (max-height:1000px){	.holder h2{margin-bottom: 15px;}	.text{bottom: 15px;}}@media screen and (max-height:850px){	.holder h2{font-size: 28px;}}@media screen and (max-height:750px){	body{		padding:25px;		padding-bottom:50px;	}	#footer{bottom:15px;}}@media screen and (max-height:620px){	.logo{		width:220px;		height:218px;	}}@media screen and (max-height:588px){	.holder{vertical-align: top;}	.logo{		margin-top: 20px;		height: 165px;		width: 167px;	}	body{		padding: 10px 10px 50px;	}}
